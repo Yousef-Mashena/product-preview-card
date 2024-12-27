@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf'),
+    url('./fonts/static/Montserrat-Medium.ttf'),
+    url('./fonts/static/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf'),
+    url('./fonts/fraunces/static/Fraunces_144pt-Bold.ttf');
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-gray-blue: hsl(228, 12%, 48%);
+
+  --text-preset-1: normal 500 1rem/100% 'Montserrat', serif;
+  --text-preset-2: normal 700 2.4rem/100% 'Fraunces', serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cream);
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  margin: auto 16px;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--dark-gray-blue);
+}
+
+.product-details {
+  margin: clamp(26px, 7%, 32px);
+}
+
+.category {
+  font: var(--text-preset-1);
+  letter-spacing: 6px;
+  margin-bottom: clamp(16px, 2%, 24px);
+}
+
+h1 {
+  font: var(--text-preset-2);
+  color: var(--dark-blue);
+}
+
+.description {
+  font: var(--text-preset-1);
+  line-height: 150%;
+
+  margin: clamp(24px, 3%, 32px) 0;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: clamp(20px, 2%, 32px);
+}
+
+.sale-price {
+  font: var(--text-preset-2);
+  color: var(--dark-cyan);
+}
+
+.full-price {
+  font-family: 'Montserrat';
+  text-decoration: line-through;
+}
+
+.icon {
+  max-width: 16px;
+  display: inline;
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 16px 0;
+  font: var(--text-preset-1);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--dark-cyan);
+}
+
+button:active {
+  background-color: hsl(157, 46%, 17%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image-container {
+    margin: 16px auto 0;
+  }
+
+  h1 {
+    padding-right: 50%;
+    line-height: 125%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 600px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image-container {
+    height: 100%;
+  }
+
+  .image-container img,
+  .image-container picture {
+    height: 100%;
+    object-fit: cover;
+  }
+}
