@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-using-html-and-css-lHx40D2Z2m](https://www.frontendmentor.io/solutions/product-preview-using-html-and-css-lHx40D2Z2m)
+- Live Site URL: [https://yousef-mashena.github.io/product-preview-card/](https://yousef-mashena.github.io/product-preview-card/)
 
 ## My process
 
