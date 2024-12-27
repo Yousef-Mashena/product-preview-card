@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./fonts/Montserrat-VariableFont_wght.ttf'),
-    url('./fonts/static/Montserrat-Medium.ttf'),
-    url('./fonts/static/Montserrat-Bold.ttf');
+  src: url('./fonts/Montserrat-VariableFont_wght.woff2'),
+    url('./fonts/static/Montserrat-Medium.woff2'),
+    url('./fonts/static/Montserrat-Bold.woff2');
 }
 
 @font-face {
   font-family: 'Fraunces';
-  src: url('./fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf'),
-    url('./fonts/fraunces/static/Fraunces_144pt-Bold.ttf');
+  src: url('./fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.woff2'),
+    url('./fonts/fraunces/static/Fraunces_144pt-Bold.woff2');
 }
 
 :root {
